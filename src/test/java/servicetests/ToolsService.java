@@ -15,4 +15,27 @@ public class ToolsService {
 		 given().when().get("http://localhost:8090/tools")
          .then().statusCode(200);	}
 
+	@Test
+	@Tag(name = "API")
+	public void testGetAllToolsa() {
+		 given().when().get("http://localhost:8090/tools")
+         .then().statusCode(200);	}
+	
+	@Test
+	@Tag(name = "API")
+	public void testGetAllToolsb() {
+		 given().when().get("http://localhost:8090/tools")
+         .then().statusCode(200);	}
+	
+	@Test
+	@Tag(name = "API")
+	public void testGetAllToolsc() {
+		 given().when().get("http://localhost:8090/tools")
+         .then().statusCode(200);	}
+	
+	@Test
+	@Tag(name = "API")
+	public void testGetAllToolsd() {
+		 given().when().get("http://localhost:8090/tools")
+         .then().statusCode(400);	}
 }
