@@ -37,5 +37,5 @@ public class ToolsService {
 	@Tag(name = "API")
 	public void testGetAllToolsd() {
 		 given().when().get("http://localhost:8090/tools")
-         .then().statusCode(400);	}
+         .then().statusCode(200);	}
 }
