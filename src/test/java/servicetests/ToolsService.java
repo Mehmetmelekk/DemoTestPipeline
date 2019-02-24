@@ -11,31 +11,49 @@ public class ToolsService {
 	
 	@Test
 	@Tag(name = "API")
-	public void testGetAllTools() {
+	public void testGetAllToolsThenCheckStatusCode() {
 		 given().when().get("http://localhost:8090/tools")
          .then().statusCode(200);	}
 
 	@Test
 	@Tag(name = "API")
-	public void testGetAllToolsa() {
+	public void testGetTestrailThenCheckStatusCode() {
 		 given().when().get("http://localhost:8090/tools")
          .then().statusCode(200);	}
 	
 	@Test
 	@Tag(name = "API")
-	public void testGetAllToolsb() {
+	public void testGetQmetryThenCheckStatusCode() {
 		 given().when().get("http://localhost:8090/tools")
          .then().statusCode(200);	}
 	
 	@Test
 	@Tag(name = "API")
-	public void testGetAllToolsc() {
+	public void testGetQtestThenCheckStatusCode() {
 		 given().when().get("http://localhost:8090/tools")
          .then().statusCode(200);	}
 	
 	@Test
 	@Tag(name = "API")
-	public void testGetAllToolsd() {
+	public void testGetQtestThenIsContainResponse() {
+		 given().when().get("http://localhost:8090/tools")
+         .then().statusCode(200);	}
+	 
+	 @Test
+	@Tag(name = "API")
+	public void testGetTestrailThenIsContainResponse() {
+		 given().when().get("http://localhost:8090/tools")
+         .then().statusCode(200);	}
+	 
+	 @Test
+	@Tag(name = "API")
+	public void testGetQmetryThenIsContainResponse() {
+		 given().when().get("http://localhost:8090/tools")
+         .then().statusCode(200);	}
+	 
+	 @Test
+	@Tag(name = "API")
+	public void testGetAllToolsThenIsContainResponse() {
 		 given().when().get("http://localhost:8090/tools")
          .then().statusCode(200);	}
 }
