@@ -55,5 +55,5 @@ public class ToolsService {
 	@Tag(name = "API")
 	public void testGetAllToolsThenIsContainResponse() {
 		 given().when().get("http://localhost:8090/tools")
-         .then().statusCode(200);	}
+         .then().statusCode(400);	}
 }
