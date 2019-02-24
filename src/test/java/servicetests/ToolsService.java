@@ -43,7 +43,7 @@ public class ToolsService {
 	@Tag(name = "API")
 	public void testGetTestrailThenIsContainResponse() {
 		 given().when().get("http://localhost:8090/tools")
-         .then().statusCode(400);	}
+         .then().statusCode(200);	}
 	 
 	 @Test
 	@Tag(name = "API")
@@ -55,5 +55,5 @@ public class ToolsService {
 	@Tag(name = "API")
 	public void testGetAllToolsThenIsContainResponse() {
 		 given().when().get("http://localhost:8090/tools")
-         .then().statusCode(400);	}
+         .then().statusCode(200);	}
 }
